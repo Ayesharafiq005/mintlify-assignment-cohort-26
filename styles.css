@@ -4,6 +4,9 @@
     box-sizing: border-box;
     font-family: 'Inter',sans-serif;
 }
+:root{
+    --primary-color:#f0e5e5;
+}
 body{
     overflow-x: hidden;
 }
@@ -59,11 +62,82 @@ body{
   z-index: -1;
     width: 100%;
     height: 100%;
-    position: absolute;
+    /* position: absolute; */
      object-fit: cover;
+     position: relative;
 }
 .img-part .dark-bg-img .dark-img{
        background-position: 50%;
     background-repeat: no-repeat;
 
+}
+.img-content {
+    /* position: relative; */
+ display: flex;
+     justify-content: center;
+    align-items: center;
+}
+
+.img-content .content  {
+    position: absolute;
+   
+}
+.img-content .content .new {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+padding: 4px 8px 4px 4px;
+
+  background: rgba(255, 255, 255, 0.2); 
+  /* 2. The core "frosted glass" effect */
+  backdrop-filter: blur(10px); 
+  /* -webkit-backdrop-filter: blur(10px);  */
+    border: 1px solid rgba(255, 255, 255, 0.3);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  border-radius: 16px;
+  cursor: pointer;
+}
+.img-content .content .new .p1 {
+    padding: 5px;
+   background-color: rgb(44, 153, 59);
+   border-radius: 20px;
+   color: var(--primary-color);
+   font-size: 15px;
+  font-weight: bold;
+}
+.img-content .content .new .p2 {
+    color: var(--primary-color);
+    font-weight: bolder;
+    background: none;
+}
+.angle-icon-arrow {
+    background-color: var(--primary-color);
+    border-radius: 50%;
+    padding: 5px;
+}
+
+.heading .email {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 8px 10px;
+    gap: 30px;
+     background: rgba(255, 255, 255, 0.2); 
+  /* 2. The core "frosted glass" effect */
+  backdrop-filter: blur(10px); 
+  /* -webkit-backdrop-filter: blur(10px);  */
+    border: 1px solid rgba(255, 255, 255, 0.3);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  border-radius: 16px;
+  cursor: pointer;
+
+}
+.heading .email .email-input {
+    border: none;
+    
+}
+.email-input::placeholder {
+    color: var(--primary-color);
+    
 }
