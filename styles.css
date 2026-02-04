@@ -5,7 +5,8 @@
     font-family: 'Inter',sans-serif;
 }
 :root{
-    --primary-color:#f0e5e5;
+    --primary-color:#f7f6f6;
+    --graycolor:#e9e7e7;
 }
 body{
     overflow-x: hidden;
@@ -57,48 +58,49 @@ body{
     border-radius: 20px;
     color:  #08090B;
 }
-
-.img-part .dark-bg-img {
-  z-index: -1;
-    width: 100%;
-    height: 100%;
-    /* position: absolute; */
-     object-fit: cover;
-     position: relative;
+.nav-btn:hover {
+    background-color: var(--graycolor);
+    cursor: pointer;
 }
-.img-part .dark-bg-img .dark-img{
-       background-position: 50%;
+
+.herosection {
+    background-image: url(./images/bg-dark.svg); 
+    width: 100vw;
+    height:800px;  
     background-repeat: no-repeat;
-
-}
-.img-content {
-    /* position: relative; */
- display: flex;
-     justify-content: center;
+    background-size: cover;
+    background-position: center ;
+    display: flex;
+    justify-content: center;
     align-items: center;
+    /* position: relative; */
+    /* z-index: -1; */
 }
 
-.img-content .content  {
-    position: absolute;
-   
+
+
+.herosection .content {
+  align-items: center;
+ width: 50%; 
+ min-height: 700px;
+ gap: 20px; 
 }
-.img-content .content .new {
+
+ .content .new {
     display: flex;
     gap: 20px;
     justify-content: center;
     align-items: center;
-padding: 4px 8px 4px 4px;
-
+padding: 4px 4px 4px 4px;
   background: rgba(255, 255, 255, 0.2); 
-  /* 2. The core "frosted glass" effect */
   backdrop-filter: blur(10px); 
-  /* -webkit-backdrop-filter: blur(10px);  */
     border: 1px solid rgba(255, 255, 255, 0.3);
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   border-radius: 16px;
   cursor: pointer;
 }
-.img-content .content .new .p1 {
+
+ .content .new .p1 {
     padding: 5px;
    background-color: rgb(44, 153, 59);
    border-radius: 20px;
@@ -106,7 +108,8 @@ padding: 4px 8px 4px 4px;
    font-size: 15px;
   font-weight: bold;
 }
-.img-content .content .new .p2 {
+
+ .content .new .p2 {
     color: var(--primary-color);
     font-weight: bolder;
     background: none;
@@ -116,28 +119,55 @@ padding: 4px 8px 4px 4px;
     border-radius: 50%;
     padding: 5px;
 }
-
-.heading .email {
+.heading {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
-    padding: 8px 10px;
-    gap: 30px;
-     background: rgba(255, 255, 255, 0.2); 
-  /* 2. The core "frosted glass" effect */
-  backdrop-filter: blur(10px); 
-  /* -webkit-backdrop-filter: blur(10px);  */
-    border: 1px solid rgba(255, 255, 255, 0.3);
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-  border-radius: 16px;
-  cursor: pointer;
-
+    text-align: center;
+    color: var(--primary-color);
+    padding: 40px 40px;
+    gap: 20px;
 }
+.heading h1 {
+    font-size: 40px; 
+}
+.heading .email {
+   display: flex;
+  align-items: center;
+  padding: 6px; 
+  background: rgba(255, 255, 255, 0.1); 
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2); 
+  border-radius: 50px; 
+  width: 400px; 
+  position: relative;
+}
+
 .heading .email .email-input {
-    border: none;
-    
+   flex-grow: 1;
+  background: transparent;
+  border: none;
+  outline: none;
+  padding: 10px 20px;
+  color: white;
+  font-size: 16px;
+ 
+  z-index: 5;
 }
 .email-input::placeholder {
     color: var(--primary-color);
-    
+}
+
+
+.email .start-now-btn {
+  background: var(--primary-color);
+  color: #1a1a1a;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 50px;
+  font-weight: 600;
+  cursor: pointer;
+}
+.start-now-btn:hover {
+    background-color:var(--graycolor) ;
 }
