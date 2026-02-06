@@ -6,10 +6,11 @@
 }
 :root{
     --primary-color:#f7f6f6;
-    --graycolor:#e9e7e7;
+    --graycolor:#afabab;
 }
 body{
     overflow-x: hidden;
+    background-color: #000000;
 }
 .navbar {
     width: 100%;
@@ -37,7 +38,7 @@ body{
     align-items: center;
     font-weight: 600;
     gap: 13px;
-
+    cursor: pointer;
 }
 
 .navbar .nav-right {
@@ -66,28 +67,31 @@ body{
 .herosection {
     background-image: url(./images/bg-dark.svg); 
     width: 100vw;
-    /* height:800px;   */
-    height: 100vh;
-     box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.5);
+   /* height: 100vh; */
+   min-height: 100vh;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center ;
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
     /* position: relative; */
     /* z-index: -1; */
-  
+    /* padding: 600px; */
+    padding-top: 100px;
 }
 
 .herosection .content {
     display: flex;
     flex-direction: column;
   align-items: center;
-  /* justify-content: center; */
+  justify-content: center;
  width: 50%; 
  /* min-height: 700px; */
   gap: 20px; 
+  margin-top: 40px;
+  
 }
 
  .content .new {
@@ -146,6 +150,7 @@ body{
   border-radius: 50px; 
   width: 400px; 
   position: relative;
+  margin-bottom: 100px;
 }
 
 .heading .email .email-input {
@@ -174,3 +179,79 @@ body{
 .start-now-btn:hover {
     background-color:var(--graycolor) ;
 }
+
+/* .startGuide-img-container {  
+    display: flex;
+    flex-direction: column;          (original)
+  width: 70%;
+  padding: 100px;
+  scale: 1.4;
+  gap: 50px;
+} */
+
+.startGuide-img-container {
+    display: flex;
+    justify-content: center;
+    width: 90%;
+    max-width: 1100px; 
+    margin: 0 auto; 
+}
+
+.startGuide-img-container img {
+    width: 100%; 
+    height: auto;
+    border-radius: 20px;
+    scale: 1.1;
+    border: 1px solid rgba(3, 3, 3, 0.5);
+     border-bottom: none;
+      box-shadow: 0 4px 30px rgba(0, 0, 0, 0.7);
+      
+}
+
+/* .startGuide-img-container img {
+ background-size: cover;
+  border-radius: 30px;
+      border: 1px solid rgba(255, 255, 255, 0.3);
+      border-bottom: none;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+} */
+
+.trusted {
+    width: 100%;
+    border-top: 1px solid rgba(3, 3, 3,0.5);
+}
+
+.intelligence-age-part  {
+    color: var(--primary-color);
+    gap: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.intelligence-age-part  h1 {
+  font-size: 2.4rem;
+}
+.intelligence-age-part  p {
+    gap: 30px;
+    line-height: 23px;
+    color: var(--graycolor);
+}
+
+.card-section-1 {
+    width: 100%;
+    height: auto;
+    padding: 100px 100px;
+    margin-top: 1.2rem;
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    justify-content: center;
+
+}
+.card-1, .card-2 {
+ border: 1px solid rgba(255, 255, 255, 0.2); 
+ object-fit:fill;
+ border-radius: 20px;
+}
+
