@@ -7,6 +7,9 @@
 :root{
     --primary-color:#f7f6f6;
     --graycolor:#afabab;
+    --green-1:#18E299;
+    --green-2:#90ECC5;
+    --smoke:#08090B;
 }
 body{
     overflow-x: hidden;
@@ -250,8 +253,55 @@ body{
 
 }
 .card-1, .card-2 {
- border: 1px solid rgba(255, 255, 255, 0.2); 
- object-fit:fill;
+ border: 1px solid rgba(255, 255, 255, 0.082); 
+ object-fit:contain;
  border-radius: 20px;
 }
 
+.card-section-2 {
+    width: 100%;
+    height: auto;
+    padding: 50px 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid rgba(255, 255, 255, 0.158); 
+ border-radius: 20px;
+
+}
+
+.card-section-2 .assistant-part {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 10px;
+    gap: 30px;
+ 
+}
+.card-section-2 .assistant-part h2 {
+   color: var(--primary-color);
+}
+.card-section-2 .assistant-part .p-head {
+    color: var(--green-1);
+}
+.card-section-2 .assistant-part .p-desc {
+    color: var(--graycolor);
+    font-size: 16px;
+    line-height: 23px;
+}
+
+.card-section-2 .assistant-video {
+    margin-top: 40px;
+    border-radius: 30px; 
+      overflow: hidden; 
+      border: 1px  solid rgba(255, 255, 255, 0.1); 
+}
+
+.assistant-video video {
+    width: 900px;
+    height: auto; 
+    display: block; 
+    border-radius: 30px; 
+}
